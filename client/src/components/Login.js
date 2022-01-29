@@ -5,7 +5,7 @@ import Container from "./styled/Container"
 const Login = () => {
     const [authUrl , setAuthUrl] = useState(null)
     const loginFunc = async () => {
-        const res = await axios.get(`http://localhost:5000/api/auth/sso/authorize`)
+        const res = await axios.get(`/api/auth/sso/authorize`)
         
         if(res){
             setAuthUrl(res.data.authUrl)

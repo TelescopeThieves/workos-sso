@@ -12,7 +12,7 @@ const Home = () => {
     const search = useLocation().search;
     const code = new URLSearchParams(search).get('code');
     const getProfile = async () => {
-        const res = await axios.get(`http://localhost:5000/api/get/getProfile/${code}`)
+        const res = await axios.get(`/api/get/getProfile/${code}`)
         if(res){
             console.log(res.data.profileData)
             setProfile(res.data.profileData)
