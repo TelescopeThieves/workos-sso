@@ -8,7 +8,7 @@ const Container = styled.div`
     flex-direction: column;
     min-height: 100vh;
     .loginDiv{
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
     }
     h1.loginDiv{
         padding-bottom: .5rem;
