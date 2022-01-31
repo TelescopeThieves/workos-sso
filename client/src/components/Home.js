@@ -2,9 +2,10 @@ import Container from "./styled/Container"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 import ProfileDiv from "./styled/ProfileDiv";
 import Login from "./Login";
-
+import Button from "./styled/Button";
 
 const Home = () => {
     const [profile, setProfile] = useState(null)
@@ -37,6 +38,13 @@ const Home = () => {
                         </div>
                     </ProfileDiv>)
                 }
+                <div className="return">
+                    <Link to="/">
+                        <Button>
+                            Return home
+                        </Button>
+                    </Link>
+                </div>
             </Container>
         )
     }
