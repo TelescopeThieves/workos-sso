@@ -29,8 +29,12 @@ const Home = () => {
             <Container>
                 {profile && 
                     (<ProfileDiv>
-                        <img src={profile.raw_attributes.picture} alt="profile picture"></img>
-                        <h1>{profile.first_name} {profile.last_name}</h1>
+                        <div>
+                            <img src={profile.raw_attributes.picture} alt="profile picture"></img>
+                        </div>
+                        <div className="nameDiv">
+                            <h1>{profile.first_name} {profile.last_name}</h1>
+                        </div>
                     </ProfileDiv>)
                 }
             </Container>

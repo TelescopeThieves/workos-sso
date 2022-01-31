@@ -5,10 +5,18 @@ const ProfileDiv = styled.div`
     justify-content: flext-start;
     align-items: stretch;
     img{
-        padding: 1rem;
+        border-radius: 50%;
+        border: 10px solid #495cdd;
     }
     h1{
         margin: 0;
+        font-size: 20px;
+    }
+    .nameDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
     }
 `
 
