@@ -28,6 +28,7 @@ const Home = () => {
     if(code){
         return(
             <Container>
+                <div className="box">
                 {profile && 
                     (<ProfileDiv>
                         <div>
@@ -44,6 +45,7 @@ const Home = () => {
                             Return home
                         </Button>
                     </Link>
+                </div>
                 </div>
             </Container>
         )

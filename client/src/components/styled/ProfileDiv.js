@@ -4,6 +4,7 @@ const ProfileDiv = styled.div`
     display: flex;
     justify-content: flext-start;
     align-items: stretch;
+    padding: 0 2rem;
     img{
         border-radius: 50%;
         border: 10px solid #495cdd;

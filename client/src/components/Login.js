@@ -19,12 +19,12 @@ const Login = () => {
     },[authUrl])
     return (
         <Container>
-            <div>
+            <div className="box">
                 <div className="loginDiv">
                     <h1>Hi! Welcome to my code assessment!</h1>
                     <p>{`Enjoy Logging in with your google account :)`}</p>
                 </div>
-                <div className="loginDiv">
+                <div className="log-in">
                     <Button onClick={loginFunc}>Login with Google</Button>
                 </div>
             </div>
